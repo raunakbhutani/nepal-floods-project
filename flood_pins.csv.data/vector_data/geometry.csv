@@ -1,0 +1,7 @@
+#defaultCSS=fill:#aa00ff; fill-opacity:0.5; stroke:#ffffff; stroke-opacity:1.0; stroke-width:1.0; symbol:cross
+#description=Default vector data container for geometries (automatically created)
+#placemarkDescriptor=org.esa.snap.core.datamodel.GeometryDescriptor
+#defaultGeometry=geometry
+org.esa.snap.Geometry	geometry:Geometry	style_css:String
+ID3f776220a26	POLYGON ((339482.5 3126935, 339281.71875 3127039, 340063.625 3127124, 339553.375 3126899.75, 339553.375 3126899.75, 339482.5 3126935))	[null]
+ID3f776220a27	POLYGON ((339277 3126769.75, 339527.375 3126786.25, 339527.375 3126786.25, 339277 3126769.75))	[null]
