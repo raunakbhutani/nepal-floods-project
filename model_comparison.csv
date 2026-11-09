@@ -1,0 +1,4 @@
+Model,Accuracy,Acc_std,F1_weighted,F1_std
+Decision Tree,0.9028,0.0664,0.8961,0.0768
+SVM-RBF,0.9340,0.0444,0.9322,0.0452
+MLP,0.9623,0.0323,0.9614,0.0336

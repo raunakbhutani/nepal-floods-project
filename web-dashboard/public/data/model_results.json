@@ -1,0 +1,44 @@
+{
+  "project_title": "Multi-Sensor Flood Mapping in the Timure/Rasuwa Gorge",
+  "fusion_sources": [
+    "Sentinel-2 optical change features (AUG27 minus AUG24)"
+  ],
+  "dataset_stats": {
+    "total_samples": 45,
+    "background_pins": 30,
+    "flood_pins": 15,
+    "total_features": 7,
+    "sentinel1_features": 0,
+    "sentinel2_features": 7
+  },
+  "features": "Six Sentinel-2 band differences (B02, B03, B04, B08, B11, B12) plus the MNDWI difference between AUG27 and AUG24.",
+  "validation": "RepeatedStratifiedKFold with 2 folds and 10 repeats (20 splits), random_state=42. Values are means and population standard deviations across splits. No spatial grouping or independent external holdout was used.",
+  "models": {
+    "Decision Tree": {
+      "accuracy": 0.9028,
+      "accuracy_std": 0.0664,
+      "f1_score": 0.8961,
+      "f1_std": 0.0768
+    },
+    "SVM-RBF": {
+      "accuracy": 0.934,
+      "accuracy_std": 0.0444,
+      "f1_score": 0.9322,
+      "f1_std": 0.0452
+    },
+    "MLP": {
+      "accuracy": 0.9623,
+      "accuracy_std": 0.0323,
+      "f1_score": 0.9614,
+      "f1_std": 0.0336
+    }
+  },
+  "key_conclusion": "The MLP had the highest reported mean accuracy and weighted F1 in this run. The observed accuracy range between models (0.0595) is smaller than the largest reported split-level standard deviation (0.0664); this is a descriptive comparison, not a statistical significance test. Results are exploratory given 45 samples and the absence of spatially independent validation.",
+  "limitations": [
+    "The evaluated seven features are Sentinel-2 optical change features; these metrics do not evaluate Sentinel-1/Sentinel-2 feature fusion.",
+    "Repeated stratified random splits do not account for spatial dependence or establish independent external performance.",
+    "Only 45 labeled samples (30 background and 15 flood) were used.",
+    "No trained model artifact or flood-classification raster is included in this results export."
+  ],
+  "source": "Reported output from the supplied model comparison run. Served statically; the API does not retrain models on startup."
+}
