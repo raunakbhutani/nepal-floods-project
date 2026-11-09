@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #080e19;
+  --foreground: #e2e8f0;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --background: #f1f5f9;
+  --foreground: #172033;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 560px;
+  background: #080e19;
+  font-family: inherit;
+}
+
+.leaflet-control-layers,
+.leaflet-bar a {
+  border-color: rgb(255 255 255 / 12%) !important;
+  background: #101a29 !important;
+  color: #e2e8f0 !important;
+}
+
+.leaflet-control-layers label,
+.leaflet-control-scale-line {
+  color: #cbd5e1;
+}
+
+.leaflet-control-layers-expanded {
+  padding: 8px 10px;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] [class~="bg-[#080e19]"] {
+  background-color: #f1f5f9;
+  color: #172033;
+}
+
+html[data-theme="light"] [class~="bg-[#0b1321]"],
+html[data-theme="light"] [class~="bg-[#0b1321]/75"],
+html[data-theme="light"] [class~="bg-[#101a29]"] {
+  background-color: #ffffff;
+}
+
+html[data-theme="light"] [class*="bg-white/"] {
+  background-color: #f8fafc;
+}
+
+html[data-theme="light"] [class*="from-[#"] {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+html[data-theme="light"] [class*="border-white/"] {
+  border-color: #dbe3ee;
+}
+
+html[data-theme="light"] [class~="text-white"],
+html[data-theme="light"] [class~="text-slate-100"] {
+  color: #172033;
+}
+
+html[data-theme="light"] [class~="text-slate-300"] {
+  color: #334155;
+}
+
+html[data-theme="light"] [class~="text-slate-400"] {
+  color: #475569;
+}
+
+html[data-theme="light"] [class~="text-slate-500"],
+html[data-theme="light"] [class~="text-slate-600"] {
+  color: #64748b;
+}
+
+html[data-theme="light"] [class~="text-cyan-100"],
+html[data-theme="light"] [class~="text-cyan-200"],
+html[data-theme="light"] [class~="text-cyan-300"] {
+  color: #0e7490;
+}
+
+html[data-theme="light"] [class~="text-emerald-200"],
+html[data-theme="light"] [class~="text-emerald-300"] {
+  color: #047857;
+}
+
+html[data-theme="light"] [class~="text-amber-100"],
+html[data-theme="light"] [class~="text-amber-300"] {
+  color: #92400e;
+}
+
+html[data-theme="light"] [class~="text-rose-100/75"],
+html[data-theme="light"] [class~="text-rose-200"] {
+  color: #9f1239;
+}
+
+html[data-theme="light"] .leaflet-control-layers,
+html[data-theme="light"] .leaflet-bar a {
+  border-color: #cbd5e1 !important;
+  background: #ffffff !important;
+  color: #172033 !important;
+}
+
+html[data-theme="light"] .leaflet-control-layers label,
+html[data-theme="light"] .leaflet-control-scale-line {
+  color: #334155;
+}
+
+html[data-theme="light"] .recharts-cartesian-axis-tick text {
+  fill: #475569 !important;
+}
+
+html[data-theme="light"] .recharts-tooltip-wrapper > div {
+  border-color: #cbd5e1 !important;
+  background: #ffffff !important;
+  color: #172033 !important;
+}
