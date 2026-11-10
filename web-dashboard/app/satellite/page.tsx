@@ -44,7 +44,7 @@ export default function SatellitePage() {
               <Tooltip contentStyle={{ background: "#101a29", border: "1px solid #334155", color: "#fff" }} />
               <Legend />
               <Line type="monotone" dataKey="vv_flood_mean" name="VV flood pins" stroke="#22d3ee" dot={false} />
-              <Line type="monotone" dataKey="vh_flood_mean" name="VH flood pins" stroke="#38bdf8" dot={false} />
+              <Line type="monotone" dataKey="vh_flood_mean" name="VH flood pins" stroke="#c084fc" dot={false} />
               <Line type="monotone" dataKey="vv_background_mean" name="VV background" stroke="#fbbf24" dot={false} />
               <Line type="monotone" dataKey="vh_background_mean" name="VH background" stroke="#fb7185" dot={false} />
             </LineChart>
@@ -67,7 +67,7 @@ export default function SatellitePage() {
               <Legend />
               <Line type="monotone" dataKey="ndwi_flood_mean" name="NDWI flood" stroke="#22d3ee" dot={false} />
               <Line type="monotone" dataKey="ndwi_background_mean" name="NDWI background" stroke="#64748b" dot={false} />
-              <Line type="monotone" dataKey="mndwi_flood_mean" name="MNDWI flood" stroke="#38bdf8" dot={false} />
+              <Line type="monotone" dataKey="mndwi_flood_mean" name="MNDWI flood" stroke="#c084fc" dot={false} />
               <Line type="monotone" dataKey="mndwi_background_mean" name="MNDWI background" stroke="#fbbf24" dot={false} />
             </LineChart>
           </ResponsiveContainer>
