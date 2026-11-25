@@ -55,6 +55,23 @@ Open [http://localhost:3000](http://localhost:3000). Model pages use the API's
 unavailable. The map uses `/pins`, and flood/satellite views use
 `/flood/stats`.
 
+## Deploy
+
+### Frontend on Vercel
+
+Import this repository and set the project root directory to `web-dashboard`.
+Use the detected Next.js framework and `npm run build`. After deploying the API
+on Render, set `NEXT_PUBLIC_API_URL` to its `https://...onrender.com` service
+URL (without a trailing slash) for the Production environment. Add the same
+variable to Preview if previews should use the API.
+
+### API on Render
+
+Create a Blueprint from the repository root using `render.yaml`. Leave the
+service root directory unset so the API can read the root-level feature tables
+and model results. The Blueprint installs `backend/requirements.txt`, starts
+FastAPI with Uvicorn, and checks `/health`.
+
 ## API endpoints
 
 - `GET /health` — static mode and source file paths

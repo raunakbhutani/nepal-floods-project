@@ -1,0 +1,362 @@
+[
+  {
+    "name": "pin_1",
+    "target": 0,
+    "lon": 85.37009114252126,
+    "lat": 28.258386446058925,
+    "elevation_m": 1762.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_2",
+    "target": 0,
+    "lon": 85.3703801164987,
+    "lat": 28.25811186117014,
+    "elevation_m": 1842.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_3",
+    "target": 0,
+    "lon": 85.37064011037415,
+    "lat": 28.25783187493052,
+    "elevation_m": 1842.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_4",
+    "target": 0,
+    "lon": 85.37092954258611,
+    "lat": 28.25752696350874,
+    "elevation_m": 1886.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_5",
+    "target": 0,
+    "lon": 85.37138129880933,
+    "lat": 28.257249261811925,
+    "elevation_m": 1930.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_6",
+    "target": 0,
+    "lon": 85.36894638358666,
+    "lat": 28.25646195120128,
+    "elevation_m": 1810.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_7",
+    "target": 0,
+    "lon": 85.3692050689237,
+    "lat": 28.256267889042263,
+    "elevation_m": 1851.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_8",
+    "target": 0,
+    "lon": 85.36964885923736,
+    "lat": 28.256131641313235,
+    "elevation_m": 1851.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_9",
+    "target": 0,
+    "lon": 85.37003922914538,
+    "lat": 28.25568639251339,
+    "elevation_m": 1913.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_10",
+    "target": 0,
+    "lon": 85.37026427498202,
+    "lat": 28.255411045006365,
+    "elevation_m": 1913.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_11",
+    "target": 0,
+    "lon": 85.37126046602862,
+    "lat": 28.25449277961421,
+    "elevation_m": 1971.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_12",
+    "target": 0,
+    "lon": 85.37009903980805,
+    "lat": 28.253665057097372,
+    "elevation_m": 1922.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_13",
+    "target": 0,
+    "lon": 85.36940558146496,
+    "lat": 28.2534040282806,
+    "elevation_m": 1870.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_14",
+    "target": 0,
+    "lon": 85.36995237290083,
+    "lat": 28.252990976373248,
+    "elevation_m": 1893.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_15",
+    "target": 0,
+    "lon": 85.36867044579216,
+    "lat": 28.251681568368443,
+    "elevation_m": 1833.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_16",
+    "target": 0,
+    "lon": 85.36915208189312,
+    "lat": 28.25134862359327,
+    "elevation_m": 1834.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_17",
+    "target": 0,
+    "lon": 85.36988938694883,
+    "lat": 28.251018726856447,
+    "elevation_m": 1881.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_18",
+    "target": 0,
+    "lon": 85.3726980128182,
+    "lat": 28.253979117721276,
+    "elevation_m": 2091.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_19",
+    "target": 0,
+    "lon": 85.37330411085594,
+    "lat": 28.25387006597913,
+    "elevation_m": 2091.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_20",
+    "target": 0,
+    "lon": 85.36971854794714,
+    "lat": 28.249641695128744,
+    "elevation_m": 1932.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_21",
+    "target": 0,
+    "lon": 85.37032285572309,
+    "lat": 28.24964890246174,
+    "elevation_m": 1978.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_22",
+    "target": 0,
+    "lon": 85.37079651540165,
+    "lat": 28.24945739980505,
+    "elevation_m": 1978.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_23",
+    "target": 0,
+    "lon": 85.37061956586749,
+    "lat": 28.24886384049246,
+    "elevation_m": 2033.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_24",
+    "target": 0,
+    "lon": 85.37093887065278,
+    "lat": 28.248503677702026,
+    "elevation_m": 2086.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_25",
+    "target": 0,
+    "lon": 85.37154785719164,
+    "lat": 28.248202572363393,
+    "elevation_m": 2108.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_26",
+    "target": 0,
+    "lon": 85.37208739650976,
+    "lat": 28.248264606340182,
+    "elevation_m": 2169.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_27",
+    "target": 0,
+    "lon": 85.37175245621012,
+    "lat": 28.24927164210817,
+    "elevation_m": 2109.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_28",
+    "target": 0,
+    "lon": 85.3721623312602,
+    "lat": 28.251748482155666,
+    "elevation_m": 2046.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_29",
+    "target": 0,
+    "lon": 85.37359730517427,
+    "lat": 28.25140159800736,
+    "elevation_m": 2192.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_30",
+    "target": 0,
+    "lon": 85.37273164610882,
+    "lat": 28.25788712977001,
+    "elevation_m": 2041.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_1",
+    "target": 1,
+    "lon": 85.36695597909552,
+    "lat": 28.25625619438352,
+    "elevation_m": 1718.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_2",
+    "target": 1,
+    "lon": 85.3669079175013,
+    "lat": 28.255977588582898,
+    "elevation_m": 1718.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_3",
+    "target": 1,
+    "lon": 85.36696414543673,
+    "lat": 28.25572044959616,
+    "elevation_m": 1734.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_4",
+    "target": 1,
+    "lon": 85.3668644787687,
+    "lat": 28.25539573099367,
+    "elevation_m": 1734.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_5",
+    "target": 1,
+    "lon": 85.36681718812996,
+    "lat": 28.25506658318904,
+    "elevation_m": 1734.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_6",
+    "target": 1,
+    "lon": 85.36674904250307,
+    "lat": 28.254580477466185,
+    "elevation_m": 1735.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_7",
+    "target": 1,
+    "lon": 85.36664937737316,
+    "lat": 28.254255758725975,
+    "elevation_m": 1717.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_8",
+    "target": 1,
+    "lon": 85.36662602466288,
+    "lat": 28.25388140089419,
+    "elevation_m": 1732.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_9",
+    "target": 1,
+    "lon": 85.36657796467132,
+    "lat": 28.25360279496454,
+    "elevation_m": 1732.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_10",
+    "target": 1,
+    "lon": 85.36640126434467,
+    "lat": 28.25299406862921,
+    "elevation_m": 1724.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_11",
+    "target": 1,
+    "lon": 85.36635428404225,
+    "lat": 28.252644703868324,
+    "elevation_m": 1724.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_12",
+    "target": 1,
+    "lon": 85.36633882377085,
+    "lat": 28.25213395209473,
+    "elevation_m": 1715.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_13",
+    "target": 1,
+    "lon": 85.36631786099828,
+    "lat": 28.251602914035004,
+    "elevation_m": 1699.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_14",
+    "target": 1,
+    "lon": 85.3663260289405,
+    "lat": 28.251067169053712,
+    "elevation_m": 1699.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  },
+  {
+    "name": "pin_15",
+    "target": 1,
+    "lon": 85.36649581732485,
+    "lat": 28.25060412759571,
+    "elevation_m": 1690.0,
+    "dataset": "Open-Meteo elevation (Copernicus DEM based)"
+  }
+]

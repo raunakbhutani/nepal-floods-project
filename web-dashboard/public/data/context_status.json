@@ -1,0 +1,13 @@
+{
+  "source": "OpenStreetMap Overpass",
+  "status": "failed",
+  "error": "429 Client Error: Too Many Requests for url: https://overpass.kumi.systems/api/interpreter",
+  "elevation": {
+    "status": "ok",
+    "source": "Open-Meteo elevation API",
+    "n": 45,
+    "min": 1690.0,
+    "max": 2192.0,
+    "mean": 1876.9555555555555
+  }
+}

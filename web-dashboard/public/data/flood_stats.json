@@ -1,0 +1,261 @@
+{
+  "method": "SAR log-ratio change detection between 24 Aug 2026 (immediate pre-event) and 28 Aug 2026 (post-event), combining VV and VH. Threshold selected by maximum F1 on the 45 labelled pins, then intersected with dark post-event backscatter. This is a candidate inundation mask, not a validated flood extent.",
+  "downsample_factor": 8,
+  "threshold_log_ratio": -0.3817189633846283,
+  "pin_f1_at_threshold": 0.8148148148148148,
+  "candidate_flood_pixels": 34406,
+  "candidate_area_km2": 0.6905421824000001,
+  "bounds": {
+    "west": 85.36057167101383,
+    "east": 85.37408858548085,
+    "south": 28.24778299999829,
+    "north": 28.26057768923379,
+    "crs": "EPSG:4326",
+    "source_crs": "EPSG:32645",
+    "width": 2293,
+    "height": 2500
+  },
+  "band_pairing_note": "SNAP stack bands were paired using sourceProduct metadata: for each date, the first band is VH and the second is VV. The earlier calculate_ratios.py script treated even indices as VV after a filename sort, which inverts that pairing. Ratio GeoTIFFs in Timure_Ratio_Outputs/ should be treated as unverified until reprocessed.",
+  "sentinel2": {
+    "status": "not_integrated",
+    "reason": "No s2_features.csv or usable AOI-clipped L2A rasters in this repository.",
+    "known_scenes": [
+      {
+        "date": "2026-07-13",
+        "cloud_full_scene_pct": 95.2,
+        "note": "Selected for SCL comparison; AOI usability unverified"
+      },
+      {
+        "date": "2026-08-27",
+        "cloud_full_scene_pct": 78.47,
+        "note": "Nearest optical scene to the event; AOI usability unverified"
+      },
+      {
+        "date": "2026-09-01",
+        "cloud_full_scene_pct": 87.86,
+        "note": "Post-event; AOI usability unverified"
+      }
+    ]
+  },
+  "dem": {
+    "status": "not_in_repository",
+    "intended_product": "Copernicus DEM GLO-30"
+  },
+  "emsr927": {
+    "status": "not_in_repository",
+    "note": "Grading package is a damage reference, not a flood-water boundary."
+  },
+  "dates": [
+    {
+      "file": "band_1_ref_01Jan2000",
+      "date": "2026-05-05",
+      "pol": "VH",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec1_01Jan2000",
+      "date": "2026-05-05",
+      "pol": "VV",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec2_01Jan2000",
+      "date": "2026-06-10",
+      "pol": "VH",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec3_01Jan2000",
+      "date": "2026-06-10",
+      "pol": "VV",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec4_01Jan2000",
+      "date": "2026-07-23",
+      "pol": "VH",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec5_01Jan2000",
+      "date": "2026-07-23",
+      "pol": "VV",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec6_01Jan2000",
+      "date": "2026-08-12",
+      "pol": "VH",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec7_01Jan2000",
+      "date": "2026-08-12",
+      "pol": "VV",
+      "role": "pre"
+    },
+    {
+      "file": "band_1_sec8_01Jan2000",
+      "date": "2026-08-24",
+      "pol": "VH",
+      "role": "immediate_pre"
+    },
+    {
+      "file": "band_1_sec9_01Jan2000",
+      "date": "2026-08-24",
+      "pol": "VV",
+      "role": "immediate_pre"
+    },
+    {
+      "file": "band_1_sec10_01Jan2000",
+      "date": "2026-08-28",
+      "pol": "VH",
+      "role": "post"
+    },
+    {
+      "file": "band_1_sec11_01Jan2000",
+      "date": "2026-08-28",
+      "pol": "VV",
+      "role": "post"
+    },
+    {
+      "file": "band_1_sec12_01Jan2000",
+      "date": "2026-09-05",
+      "pol": "VH",
+      "role": "post"
+    },
+    {
+      "file": "band_1_sec13_01Jan2000",
+      "date": "2026-09-05",
+      "pol": "VV",
+      "role": "post"
+    },
+    {
+      "file": "band_1_sec14_01Jan2000",
+      "date": "2026-09-21",
+      "pol": "VH",
+      "role": "post"
+    },
+    {
+      "file": "band_1_sec15_01Jan2000",
+      "date": "2026-09-21",
+      "pol": "VV",
+      "role": "post"
+    },
+    {
+      "file": "band_1_sec16_01Jan2000",
+      "date": "2026-10-06",
+      "pol": "VH",
+      "role": "later"
+    },
+    {
+      "file": "band_1_sec17_01Jan2000",
+      "date": "2026-10-06",
+      "pol": "VV",
+      "role": "later"
+    }
+  ],
+  "study": {
+    "name": "Timure / Rasuwa Gorge",
+    "district": "Rasuwa District, Nepal",
+    "event": "August 2026 flood",
+    "center": {
+      "lat": 28.254,
+      "lon": 85.367
+    },
+    "zones": [
+      {
+        "id": 1,
+        "name": "Source zone",
+        "description": "Glacier, slope, rock-ice collapse and landslide hypotheses. Not confirmed causes.",
+        "center": [
+          28.27,
+          85.36
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Transport corridor",
+        "description": "Lhende Khola and Bhote Koshi corridor: water extent, morphology, sediment.",
+        "center": [
+          28.254,
+          85.367
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Downstream impact",
+        "description": "Settlements, roads, bridges, bank erosion and infrastructure exposure.",
+        "center": [
+          28.24,
+          85.375
+        ]
+      }
+    ]
+  },
+  "pin_time_series_means": [
+    {
+      "date": "2026-05-05",
+      "vv_flood_mean": 0.7483134606666667,
+      "vh_flood_mean": 0.18744444879999997,
+      "vv_background_mean": 0.8339534363333332,
+      "vh_background_mean": 0.17624710773333332
+    },
+    {
+      "date": "2026-06-10",
+      "vv_flood_mean": 0.9930307499999999,
+      "vh_flood_mean": 0.18336471333333337,
+      "vv_background_mean": 0.8064774693333334,
+      "vh_background_mean": 0.15362677376666664
+    },
+    {
+      "date": "2026-07-23",
+      "vv_flood_mean": 1.7819158513333335,
+      "vh_flood_mean": 0.3220702663333333,
+      "vv_background_mean": 0.8436122366666668,
+      "vh_background_mean": 0.20246624366666666
+    },
+    {
+      "date": "2026-08-12",
+      "vv_flood_mean": 0.6539956984666666,
+      "vh_flood_mean": 0.07810629104000001,
+      "vv_background_mean": 0.06335887500000001,
+      "vh_background_mean": 0.017091112453333335
+    },
+    {
+      "date": "2026-08-24",
+      "vv_flood_mean": 0.7634323034666668,
+      "vh_flood_mean": 0.10175731753333334,
+      "vv_background_mean": 0.0579133165,
+      "vh_background_mean": 0.01937761660333333
+    },
+    {
+      "date": "2026-08-28",
+      "vv_flood_mean": 0.7292809513333333,
+      "vh_flood_mean": 0.09929401,
+      "vv_background_mean": 1.0149336856666669,
+      "vh_background_mean": 0.1262932618
+    },
+    {
+      "date": "2026-09-05",
+      "vv_flood_mean": 0.22027431053333332,
+      "vh_flood_mean": 0.026601755960000004,
+      "vv_background_mean": 0.07049624533999999,
+      "vh_background_mean": 0.016371583566666667
+    },
+    {
+      "date": "2026-09-21",
+      "vv_flood_mean": 0.4981366453333333,
+      "vh_flood_mean": 0.04595916993333333,
+      "vv_background_mean": 0.8868324683333334,
+      "vh_background_mean": 0.1829344378666667
+    },
+    {
+      "date": "2026-10-06",
+      "vv_flood_mean": 0.0,
+      "vh_flood_mean": 0.0,
+      "vv_background_mean": 0.0,
+      "vh_background_mean": 0.0
+    }
+  ]
+}
