@@ -1,0 +1,11 @@
+backend/.venv/
+**/__pycache__/
+*.pyc
+.DS_Store
+web-dashboard/.next/
+web-dashboard/node_modules/
+node_modules
+/flood_pins.csv.data/
+/Timure_Ratio_Outputs/
+/Timure_S1_TimeSeries_Stack/
+/Timure_S1_TimeSeries_Stack.data/
