@@ -7,18 +7,18 @@ starting the API does not retrain models.
 ## Data sources
 
 - `model_results.json` at the repository root is the authoritative static
-  source for published model metrics, cross-validation scores, and confidence
-  values.
+  source for published model metrics and validation metadata.
 - `s1_features.csv` and `s2_features.csv` provide the labelled pin data. The
   API serves those pins and computes pin-level Sentinel-2 NDWI/MNDWI from the
   CSV; it does not fit a model.
 - `web-dashboard/public/data/model_results.json` is the dashboard's offline
   fallback copy of the root results file.
-- The current comparison uses seven Sentinel-2 optical change features on 45
-  labeled samples and reports mean accuracy / weighted F1 over 10 repeats of
-  stratified 2-fold CV. It is exploratory: no spatial grouping or independent
-  external holdout was used, and it does not evaluate Sentinel-1/Sentinel-2
-  feature fusion. `model_comparison.csv` contains the same summary scores.
+- The current comparison uses 10 fused change features (3 Sentinel-1 and 7
+  Sentinel-2) on 45 labeled samples and reports mean accuracy over 10 repeats
+  of stratified 2-fold CV. This is exploratory: no spatial grouping or
+  independent external holdout was used. `model_comparison.csv` contains the
+  same accuracy scores; F1 and split-level standard deviations were not
+  calculated for this run.
 - The separate Sentinel-1-only offline pipeline stores its evaluation under
   `backend/artifacts/models/`; it does not overwrite the dashboard's published
   results or offline fallback.
@@ -28,9 +28,8 @@ starting the API does not retrain models.
   `model_results.json`. The dashboard reports their absence rather than
   substituting results from another model run.
 
-`/predict` is a nearest-labelled-pin lookup, not a live classifier. Its
-confidence field is populated only when the requested model has a published
-confidence value in `model_results.json`.
+`/predict` is a nearest-labelled-pin lookup, not a live classifier. The
+current published comparison does not include model confidence scores.
 
 ## Run the application
 

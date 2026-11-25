@@ -28,7 +28,6 @@ export default function MachineLearningPage() {
   )[0];
   const rows = (dash?.models ?? []).map((m) => ({
     name: m.name.replace("Support Vector Machine (SVM)", "SVM").replace("Deep Learning MLP", "MLP"),
-    f1: m.f1 ?? 0,
     acc: m.accuracy ?? 0,
   }));
   const importance = dash?.feature_importance ?? [];
@@ -79,16 +78,10 @@ export default function MachineLearningPage() {
         {(dash?.models ?? []).map((m) => (
           <div key={m.name} className="rounded-xl border border-white/[0.07] bg-[#101a29] p-5">
             <p className="text-xs font-semibold text-cyan-300">{m.name}</p>
-            <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="mt-4">
               <div>
                 <p className="text-[10px] text-slate-500">Mean accuracy</p>
                 <p className="text-2xl font-semibold">{m.accuracy != null ? `${(m.accuracy * 100).toFixed(2)}%` : "—"}</p>
-                <p className="text-[10px] text-slate-500">SD {m.accuracy_std != null ? m.accuracy_std.toFixed(4) : "—"}</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-500">Mean weighted F1</p>
-                <p className="text-2xl font-semibold">{m.f1 != null ? `${(m.f1 * 100).toFixed(2)}%` : "—"}</p>
-                <p className="text-[10px] text-slate-500">SD {m.f1_std != null ? m.f1_std.toFixed(4) : "—"}</p>
               </div>
             </div>
           </div>
@@ -96,7 +89,7 @@ export default function MachineLearningPage() {
       </div>
 
       <div className="rounded-xl border border-white/[0.07] bg-[#101a29] p-6">
-        <h3 className="text-sm font-semibold">Mean accuracy / weighted F1</h3>
+        <h3 className="text-sm font-semibold">Mean accuracy across repeated splits</h3>
         <div className="mt-5 h-[260px]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={rows}>
@@ -104,8 +97,7 @@ export default function MachineLearningPage() {
               <XAxis dataKey="name" tick={{ fill: "#94a3b8", fontSize: 10 }} />
               <YAxis domain={[0, 1]} tick={{ fill: "#94a3b8", fontSize: 10 }} />
               <Tooltip contentStyle={{ background: "#101a29", border: "1px solid #334155", color: "#fff" }} />
-              <Bar dataKey="f1" fill="#22d3ee" name="F1" />
-              <Bar dataKey="acc" fill="#64748b" name="Accuracy" />
+              <Bar dataKey="acc" fill="#22d3ee" name="Accuracy" />
             </BarChart>
           </ResponsiveContainer>
         </div>

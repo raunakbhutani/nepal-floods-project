@@ -5,7 +5,6 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
-  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -26,7 +25,6 @@ export default function ModelEvaluationPage() {
   const scoreChart = (dash?.models ?? []).map((model) => ({
     name: model.name,
     accuracy: model.accuracy ?? 0,
-    f1: model.f1 ?? 0,
   }));
 
   return (
@@ -42,22 +40,10 @@ export default function ModelEvaluationPage() {
         {(dash?.models ?? []).map((m) => (
           <div key={m.name} className="rounded-xl border border-white/[0.07] bg-[#101a29] p-5">
             <h4 className="text-xs font-semibold text-cyan-300">{m.name}</h4>
-            <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="mt-4">
               <div>
                 <p className="text-[10px] text-slate-500">Mean accuracy</p>
                 <p className="mt-1 text-xl font-semibold">{m.accuracy != null ? m.accuracy.toFixed(3) : "—"}</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-500">Accuracy SD</p>
-                <p className="mt-1 text-xl font-semibold">{m.accuracy_std != null ? m.accuracy_std.toFixed(3) : "—"}</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-500">Mean weighted F1</p>
-                <p className="mt-1 text-xl font-semibold">{m.f1 != null ? m.f1.toFixed(3) : "—"}</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-500">Weighted F1 SD</p>
-                <p className="mt-1 text-xl font-semibold">{m.f1_std != null ? m.f1_std.toFixed(3) : "—"}</p>
               </div>
             </div>
           </div>
@@ -66,7 +52,7 @@ export default function ModelEvaluationPage() {
 
       {scoreChart.length > 0 && (
         <div className="rounded-xl border border-white/[0.07] bg-[#101a29] p-6">
-          <h3 className="text-sm font-semibold">Mean scores across repeated stratified splits</h3>
+          <h3 className="text-sm font-semibold">Mean accuracy across repeated stratified splits</h3>
           <div className="mt-5 h-[240px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={scoreChart}>
@@ -74,9 +60,7 @@ export default function ModelEvaluationPage() {
                 <XAxis dataKey="name" tick={{ fill: "#94a3b8", fontSize: 10 }} />
                 <YAxis domain={[0, 1]} tick={{ fill: "#94a3b8", fontSize: 10 }} />
                 <Tooltip contentStyle={{ background: "#101a29", border: "1px solid #334155", color: "#fff" }} />
-                <Legend />
                 <Bar dataKey="accuracy" fill="#64748b" name="Accuracy" />
-                <Bar dataKey="f1" fill="#22d3ee" name="Weighted F1" />
               </BarChart>
             </ResponsiveContainer>
           </div>

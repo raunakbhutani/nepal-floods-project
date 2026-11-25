@@ -40,8 +40,7 @@ not set up, create `backend/.venv` and install `backend/requirements.txt`.
   click **Run API test**. This sends a real request to `POST /predict`; it is a
   nearest-labelled-pin lookup, not a newly trained prediction model.
 - **Model Evaluation (`/model-evaluation`)** — inspect mean accuracy and
-  weighted F1 with their split-level standard deviations for the repeated
-  stratified 2-fold comparison.
+  the repeated stratified 2-fold comparison.
 - **Terrain (`/terrain`)** and **Infrastructure (`/infrastructure`)** — review
   the available pin elevation and infrastructure/context data and their
   availability notes.
@@ -70,8 +69,9 @@ the nearest labelled pin and does not run model inference. Pin data comes from
 `s1_features.csv` and
 `s2_features.csv`.
 
-The current results compare three models on seven Sentinel-2 optical change
-features. They are exploratory and do not represent Sentinel-1/Sentinel-2
-fusion or spatially independent validation. The offline Sentinel-1 pipeline
-writes its distinct results under `backend/artifacts/models/`; it does not
-replace the dashboard's published-results fallback.
+The current results compare three models on 10 fused change features (3
+Sentinel-1 and 7 Sentinel-2). They are exploratory and do not represent
+spatially independent validation. Only mean accuracy was calculated; the
+offline Sentinel-1 pipeline writes its distinct results under
+`backend/artifacts/models/` and does not replace the dashboard's
+published-results fallback.

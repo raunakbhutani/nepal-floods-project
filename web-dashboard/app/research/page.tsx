@@ -58,7 +58,7 @@ export default function ResearchPage() {
             {dash?.dataset.n_samples ?? 45} labelled samples ({dash?.dataset.n_background ?? 30} background, {dash?.dataset.n_flood ?? 15} flood) and {dash?.dataset.n_features ?? 0} evaluated features. {dash?.features}
           </li>
           <li>
-            {dash?.validation} Highest reported mean accuracy: {topModel?.name ?? "—"} ({topModel?.accuracy?.toFixed(4) ?? "—"}); weighted F1: {topModel?.f1?.toFixed(4) ?? "—"}.
+            {dash?.validation} Highest reported mean accuracy: {topModel?.name ?? "—"} ({topModel?.accuracy?.toFixed(4) ?? "—"}). This run reports accuracy only; it does not report F1.
           </li>
           <li>
             Candidate SAR inundation area = {flood?.candidate_area_km2 != null ? `${flood.candidate_area_km2.toFixed(3)} km²` : "—"}.
@@ -72,12 +72,13 @@ export default function ResearchPage() {
       <div className="rounded-xl border border-white/[0.07] bg-[#101a29] p-6">
         <h3 className="text-sm font-semibold">Method in brief</h3>
         <p className="mt-3 text-[12px] leading-7 text-slate-400">
-          For the displayed model comparison, six Sentinel-2 band differences and
-          the MNDWI difference between 24 and 27 August were evaluated with a
-          decision tree, RBF SVM and MLP using repeated stratified 2-fold CV
-          (10 repeats). This evaluation is not spatially held out. SAR log-ratio
-          change detection is a separate candidate product, not a validated flood
-          boundary.
+          For the displayed comparison, three Sentinel-1 change features (VV,
+          VH and their ratio in dB; 23 July to 28 August) and seven Sentinel-2
+          change features (six band differences and dMNDWI; 24 to 27 August)
+          were evaluated with a decision tree, RBF SVM and MLP using repeated
+          stratified 2-fold CV (10 repeats). This evaluation is not spatially
+          held out. SAR log-ratio change detection is a separate candidate
+          product, not a validated flood boundary.
         </p>
       </div>
 
