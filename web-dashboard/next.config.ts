@@ -1,20 +1,23 @@
 import type { NextConfig } from "next";
 
+const apiBaseUrl = (
+  process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000"
+).replace(/\/+$/, "");
+
 const nextConfig: NextConfig = {
-  /* config options here */
   experimental: {
     agentFeedback: true,
     agentUpgrade: "security",
   },
   cacheComponents: true,
   partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
+  async rewrites() {
+    return [
+      {
+        source: "/backend/:path*",
+        destination: `${apiBaseUrl}/:path*`,
       },
-    },
+    ];
   },
 };
 
